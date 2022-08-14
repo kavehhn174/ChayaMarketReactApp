@@ -1,13 +1,167 @@
 body {
+  background-color: #fff;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family:"Vazir";
+  src: url("./fonts/Vazir-Regular.ttf") format("truetype");
+}
+
+.img {
+  width: 100px;
+  align-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.icon {
+  position: absolute;
+}
+
+.input-icon {
+  text-align: center;
+  align-content: center;
+}
+
+.search-bar {
+  width: 50%;
+}
+
+.img-box {
+  margin-right: 30px;
+  flex: 1;
+}
+
+.icon-rtl {
+  padding-right: 35px;
+  background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat 99% 50%;
+  background-size: 20px;
+
+}
+
+
+.search-box {
+  border: 0;
+  background-color: white;
+  border-radius: 20px;
+  height: 30px;
+  align-items: center;
+  text-align: right;
+}
+
+
+.header-container {
+  height: 100px;
+  display: flex;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  flex: 1;
+  order: 6;
+}
+
+.logo img {
+  align-items: center;
+}
+
+.logo-separator {
+  order: 5;
+  background: #A8A8A8;
+  width: 1px;
+  margin: 10px 40px;
+  height: 40%;
+}
+
+.search-bar {
+  font-family: Vazir sans-serif;
+  display: flex;
+  flex: 7;
+  order: 4;
+}
+
+.search-bar .search-input {
+  font-family: Vazir sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  flex: 1;
+  border: 0;
+  background-color: #F7F7F7;
+  border-radius: 20px;
+  text-align: right;
+}
+
+.search-separator {
+  order: 3;
+  background: #A8A8A8;
+  width: 1px;
+  margin: 10px 40px;
+  height: 40%;
+}
+
+.login {
+  text-align: center;
+  flex: 1;
+  order: 2;
+}
+
+.login img {
+  width: 25px;
+}
+
+.login p {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: Vazir, serif;
+}
+
+.cart {
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 10px;
+  background-color: #F7F7F7;
+  text-align: center;
+  align-content: center;
+  flex: 1;
+  order: 1;
+
+}
+
+.cart img {
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+}
+
+.cart p {
+  vertical-align: center;
+  display: inline-block;
+  align-items: center;
+  font-family: Vazir, serif;
+}
+
+.navbar {
+  width: auto;
+  height: 40px;
+  background-color: #FFD3AE;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-family: Vazir, serif;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-family: Vazir, serif;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-family: Vazir, serif;
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-family: Vazir, serif;
 }
